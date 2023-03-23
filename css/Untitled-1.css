@@ -1,0 +1,26 @@
+<style>
+<h1>Trabalho 1</h1><p>Aqui comentamos sei la oq</p>color: cornsilk;
+text-align: center;
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+</style>
+
+<style>
+body {
+    background-color: yellow;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+}
+</style>
