@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.center nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+    margin: auto;
+    padding: 0 2%;
+    background-color: black;
+}
+
+.logo {
+    border-radius: 100%;
+    width: 50%;
+    align-items: left;
+    
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+body {
+    background-color: wheat;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+}
