@@ -13,26 +13,32 @@
 
 nav {
     display: flex;
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 1px 0;
-    align-items: center;
+    vertical-align: text-top;
     justify-content: space-between;
-    background: black;    
+    background: black;
+    height: auto;
+}
+
+nav img{
+    width: 640px;
+    height: 640px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    font-size: 75px;
+    font-size: 75%;
+
 }
 
 nav ul li a{
     text-decoration: none;
     color: #d9af4b;
     font-weight: bolder;
-    
 }
 
 nav ul li a:hover {
