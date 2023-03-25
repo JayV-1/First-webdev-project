@@ -8,6 +8,7 @@
     position: relative;
     width: 100%;
     margin-bottom: 30px;
+    color: #E6B950;
 }
 
 body{
@@ -70,6 +71,7 @@ nav button:hover{
     margin-left: 50px;
     margin-top: 5px;
     margin-bottom: 10px;
+    color: #E6B950;
 }
 
 .header h1 {
@@ -95,19 +97,49 @@ nav button:hover{
     padding-right: 3.75%;
     display: flex;
     line-height: 1.6;
+    color: #E6B950;
+    justify-content: center;
 }
 
 .content p{
-    padding-right: 1%;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.6;
     /* margin-right: 5px; */
     color: #E6B950;
+    width: 1000px;
 }
 
 .content .imagem img{
-    max-width: 200%;
+    max-width: 250%;
     height: auto;
+    /* margin: 2px; */
+}
+
+.content a{
+    text-decoration: none;
+    padding-right: none;
+    font-size: 24px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.content a:hover {
+    color: #E6B950;
+}
+
+.fontes{
+    color: #E6B950;
+    padding-left: 5%;
+    margin-top: 20px;
+}
+
+.fontes p{
+    padding-left: 2px;
+    font-size: 40px;
+    padding-right: 10px;
+    color: #E6B950;
+    font-weight: bold;
 }
 
 .fontes ul li {
@@ -118,6 +150,7 @@ nav button:hover{
 }
 
 .fontes ul li a{
+    flex: auto;
     transition: color 0.2s ease;
     transition: underline 0.2s ease;
     text-decoration: none;
