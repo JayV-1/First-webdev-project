@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: black;
 }
 
 .main {
     position: relative;
     width: 100%;
-    background: transparent;
     margin-bottom: 30px;
+}
+
+body{
+    background-color: black;
 }
 
 nav {
@@ -18,7 +20,6 @@ nav {
     margin: auto;
     padding: 1px 0;
     justify-content: space-between;
-    background-color: transparent;
     height: auto;
 }
 
@@ -27,7 +28,6 @@ nav img{
     max-width: 110px;
     height: auto;
     max-height: 110px;
-    background: transparent;
 }
 
 nav ul li {
@@ -90,27 +90,24 @@ nav button:hover{
 }
 
 .content {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 4px;
+    padding-left: 3%;
+    padding-right: 3.75%;
     display: flex;
     line-height: 1.6;
 }
 
 .content p{
-    font-size: 250%;
-    padding-top: 3%;
-    padding-right: 10px;
-    color: #E6B950;
+    padding-right: 1%;
+    font-size: 26px;
     line-height: 1.6;
-    /* font-weight: bold; */
-    
+    /* margin-right: 5px; */
+    color: #E6B950;
 }
 
-.content .imagem{
-    width: 90%;
-    /* max-width: 700px; */
+.content .imagem img{
+    max-width: 200%;
     height: auto;
-    margin-right: 350px;
 }
 
 .fontes ul li {
