@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\CSS\Style.css">
+    <link rel="stylesheet" href="..\CSS\Style2.css">
+    <script type="module" src="..\JavaScript\webManager.js"></script>
+    <title>Contato</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <img src="..\imagens\Guns-N-Roses-Logo_cropped.png" class="logo">
+            <ul>
+                <li><a href="Principal.html">Principal</a></li>
+                <li><a href="Detalhes.html">Detalhes</a></li>
+                <li><a href="Novidades.html">Novidades</a></li>
+                <li><a href="Projetos.html">Projetos</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+            <button class="theme" id="btn">Tema</button>
+        </nav>
+    </div>
+    <div class="header">
+        <h1>Aonde <span>Encontrar</span></h1>
+        <h4></h4>
+    </div>
+    <div class="content">
+
+        <p>Slash pode ser encontrado em várias de suas redes socias, tais como:
+            <a href="https://www.youtube.com/channel/UC6WCQjfkWnDWvFfw_YDrq5g">youtube</a>, <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/slash/&ved=2ahUKEwi7q9-Oifb9AhU2uZUCHVjoAs0QFnoECHMQAQ&usg=AOvVaw3EgbC7k_O3jx5eGs35X7ju">Instagram</a>,
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.facebook.com/Slash/&ved=2ahUKEwiZj8HHifb9AhUKErkGHTaNBMY4HhAWegQIAhAB&usg=AOvVaw1xaxUShxD7y2xHajyAhz2U">Facebook</a>
+            e <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://open.spotify.com/artist/4Cqia9vrAbm7ANXbJGXsTE&ved=2ahUKEwi7q9-Oifb9AhU2uZUCHVjoAs0Qjjh6BAg7EAE&usg=AOvVaw1Cm9Znt6_JgmXVu0LsOkR_">Spotify</a>.
+        </p>
+    </div>
+    <div class="fontes">
+        <div id="contatos">
+            <p>Fontes</p>
+            <ul>
+                <li><a
+                        href="https://www.rockbizz.com.br/slash-ft-myles-kennedy-and-the-conspirators-lancam-o-novo-album-4/">rockbizz</a>
+                </li>
+                <li><a
+                        href="https://coisademusico.com.br/slash-explica-como-escreveu-o-riff-de-sweet-child-o-mine/">coisademusico</a>
+                </li>
+                <li><a
+                        href="https://www.tenhomaisdiscosqueamigos.com/2021/03/24/slash-desgosto-sweet-child-o-mine/">tenhomaisdiscosqueamigos</a>
+                </li>
+                <li></li>
+                <li><a
+                        href="https://g1.globo.com/Noticias/Musica/0,,MUL1558938-7085,00-AXL+E+FENOMENAL+DIZ+SLASH+SOBRE+EXCOLEGA+DE+GUNS+N+ROSES.html">g1</a>
+                </li>
+                <li><a href="https://guitarload.com.br/2022/06/20/discografia-slash/">Guitarload</a></li>
+                <li><a
+                        href="https://1023.clicrbs.com.br/blogda1023/2023/03/22/guns-n-roses-slash-revela-quem-sao-os-seus-herois-da-guitarra/">clicrbs</a>
+                </li>
+                <li><a
+                        href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.cifraclub.com.br/slash/&ved=2ahUKEwiZj8HHifb9AhUKErkGHTaNBMY4HhAWegQIChAB&usg=AOvVaw2rblQ86Lya0ElBGvaZdo1K">cifras</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>function sendMail() {
+        let name = document.getElementById("name"),
+            mail = document.getElementById("mail"),
+            c1 = document.getElementById("contato1"),
+            c2 = document.getElementById("contato2");
+        if (name.value.trim() == "") {
+            alert("O nome é obrigatório"); return false;
+        }
+        if (mail.value.trim() == "") {
+            alert("O Email é obrigatório"); return false;
+        }
+        if (!c1.checked && !c2.checked) {
+            alert("Selecione uma opção de contato"); return false;
+        }
+        return true;
+    }</script>
+    <div class="news">
+        
+        <p>Assine nosso Newsletter</p>
+        <form action="mailto:${mail}" method="post" onsubmit="return sendMail()">
+
+            <label>Nome:</label>
+            <input type="text" name="info" id="name" /> <br />
+            <label>Email:</label>
+            <input type="text" name="info" id="mail" /> <br />
+            <label>Contato:</label>
+            <input type="radio" name="contato" id="contato1" value="S" /> Semanal
+            <input type="radio" name="contato" id="contato2" value="M" /> Mensal <br />
+            <input type="submit" value="Enviar"/>
+        </form>
+    </div>
+</body>
+
+</html>
